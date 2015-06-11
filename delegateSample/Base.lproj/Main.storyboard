@@ -34,6 +34,9 @@
                                     <color key="titleColor" red="0.46699329540000001" green="0.66519612689999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSetNamaClk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kth-Fo-3eP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -53,6 +56,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnCompose" destination="HP6-SQ-rWP" id="sKE-iW-lfY"/>
+                        <outlet property="btnSetNama" destination="HoB-h4-JlZ" id="wAY-ie-8hU"/>
                         <outlet property="tfLabel" destination="aaM-aq-R8x" id="GnK-BQ-l3j"/>
                     </connections>
                 </viewController>
@@ -89,7 +93,7 @@
                                     <constraint firstAttribute="width" constant="216" id="yzs-XL-s4a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sumbit">
+                                <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

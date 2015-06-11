@@ -11,7 +11,6 @@
 //1. buat protocol --
 @protocol ChildViewControllerDelegate;
 
-// 2. inimah deklarasi view controller biasa
 @interface ChildViewController : UIViewController
 
 @property (nonatomic,weak) id<ChildViewControllerDelegate> delegate;

@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.s
+    // Do any additional setup after loading the view.
+    //[self.storyboard l];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,10 +39,12 @@
         [strongDelegate childViewController:self didChooseValue:_tfNilai.text];
         
     }
-    
-    
-    [self.navigationController popViewControllerAnimated:true];
 }
+
+-(void)childViewController:(ChildViewController *)viewController didChooseValue:(NSString *)value{
+    _tfNilai.text = value;
+}
+
 
 /*
 #pragma mark - Navigation
