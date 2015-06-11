@@ -40,6 +40,7 @@
     
     [alert setTag:1];
     [alert show];
+    //
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
