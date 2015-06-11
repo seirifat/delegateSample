@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Child View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChildViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,11 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="F8w-eM-Up0"/>
+                    <navigationItem key="navigationItem" id="F8w-eM-Up0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="HP6-SQ-rWP">
+                            <connections>
+                                <segue destination="hNE-5L-7uy" kind="show" id="aJd-eA-i5R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1377" y="438"/>
+        </scene>
+        <!--Parent View Controller-->
+        <scene sceneID="o9b-Xn-2PT">
+            <objects>
+                <viewController id="hNE-5L-7uy" customClass="ParentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Be4-5i-MLX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jw2-Ni-S50"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZaA-qv-aal">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lwb-Qe-KWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="438"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WwK-nv-YfQ">
