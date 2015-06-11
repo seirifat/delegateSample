@@ -7,9 +7,12 @@
 //
 
 #import "ParentViewController.h"
+#import "ChildViewController.h"
 
 @interface ParentViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *tfLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *btnCompose;
+-(IBAction)btnCompposeClk:(id)sender;
 @end
 
 @implementation ParentViewController
@@ -23,6 +26,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)childViewController:(ChildViewController *)viewController didChooseValue:(NSString *)value{
+    _tfLabel.text = value;
+}
+
+-(void)btnCompposeClk:(id)sender{
+    ChildViewController *c2 = [self.storyboard instantiateViewControllerWithIdentifier:@"ChildViewController"];
+    c2.delegate = self;
+    [self.navigationController pushViewController:c2 animated:YES];
 }
 
 /*

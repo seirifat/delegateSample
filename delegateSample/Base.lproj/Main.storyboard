@@ -7,7 +7,7 @@
         <!--Parent View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ParentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParentViewController" id="BYZ-38-t0r" customClass="ParentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,10 +32,14 @@
                     <navigationItem key="navigationItem" id="F8w-eM-Up0">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="HP6-SQ-rWP">
                             <connections>
-                                <segue destination="hNE-5L-7uy" kind="show" id="aJd-eA-i5R"/>
+                                <action selector="btnCompposeClk:" destination="BYZ-38-t0r" id="U9x-Z1-nIu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnCompose" destination="HP6-SQ-rWP" id="sKE-iW-lfY"/>
+                        <outlet property="tfLabel" destination="aaM-aq-R8x" id="GnK-BQ-l3j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +48,7 @@
         <!--Child View Controller-->
         <scene sceneID="o9b-Xn-2PT">
             <objects>
-                <viewController id="hNE-5L-7uy" customClass="ChildViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChildViewController" id="hNE-5L-7uy" customClass="ChildViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Be4-5i-MLX"/>
                         <viewControllerLayoutGuide type="bottom" id="Jw2-Ni-S50"/>
@@ -74,6 +78,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSubmitClk:" destination="hNE-5L-7uy" eventType="touchUpInside" id="zcK-fV-Om5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81124985521383841" green="0.91634382732177999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,6 +91,10 @@
                             <constraint firstAttribute="centerX" secondItem="Kny-Yi-ge0" secondAttribute="centerX" id="mLg-aJ-EjH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="submit" destination="Kny-Yi-ge0" id="ufm-rz-wfI"/>
+                        <outlet property="tfNilai" destination="vol-qk-kns" id="QQI-L1-3sf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwb-Qe-KWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
