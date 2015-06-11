@@ -14,8 +14,8 @@
 		35563B1B1B26DAF5008AE6F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35563B1A1B26DAF5008AE6F1 /* Images.xcassets */; };
 		35563B1E1B26DAF5008AE6F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35563B1C1B26DAF5008AE6F1 /* LaunchScreen.xib */; };
 		35563B2A1B26DAF5008AE6F1 /* delegateSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35563B291B26DAF5008AE6F1 /* delegateSampleTests.m */; };
-		35E1066A1B2932FE006BE731 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E106691B2932FE006BE731 /* ParentViewController.m */; };
-		35E1066D1B293310006BE731 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E1066C1B293310006BE731 /* ChildViewController.m */; };
+		35E106731B293A07006BE731 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E106701B293A07006BE731 /* ChildViewController.m */; };
+		35E106741B293A07006BE731 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E106721B293A07006BE731 /* ParentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +42,10 @@
 		35563B231B26DAF5008AE6F1 /* delegateSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delegateSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35563B281B26DAF5008AE6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35563B291B26DAF5008AE6F1 /* delegateSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = delegateSampleTests.m; sourceTree = "<group>"; };
-		35E106681B2932FE006BE731 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
-		35E106691B2932FE006BE731 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
-		35E1066B1B293310006BE731 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
-		35E1066C1B293310006BE731 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		35E1066F1B293A07006BE731 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		35E106701B293A07006BE731 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		35E106711B293A07006BE731 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		35E106721B293A07006BE731 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,7 @@
 		35563B0C1B26DAF5008AE6F1 /* delegateSample */ = {
 			isa = PBXGroup;
 			children = (
+				35E1066E1B293A07006BE731 /* ViewController */,
 				35563B111B26DAF5008AE6F1 /* AppDelegate.h */,
 				35563B121B26DAF5008AE6F1 /* AppDelegate.m */,
 				35563B141B26DAF5008AE6F1 /* ViewController.h */,
@@ -95,10 +96,6 @@
 				35563B1A1B26DAF5008AE6F1 /* Images.xcassets */,
 				35563B1C1B26DAF5008AE6F1 /* LaunchScreen.xib */,
 				35563B0D1B26DAF5008AE6F1 /* Supporting Files */,
-				35E106681B2932FE006BE731 /* ParentViewController.h */,
-				35E106691B2932FE006BE731 /* ParentViewController.m */,
-				35E1066B1B293310006BE731 /* ChildViewController.h */,
-				35E1066C1B293310006BE731 /* ChildViewController.m */,
 			);
 			path = delegateSample;
 			sourceTree = "<group>";
@@ -127,6 +124,17 @@
 				35563B281B26DAF5008AE6F1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35E1066E1B293A07006BE731 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35E1066F1B293A07006BE731 /* ChildViewController.h */,
+				35E106701B293A07006BE731 /* ChildViewController.m */,
+				35E106711B293A07006BE731 /* ParentViewController.h */,
+				35E106721B293A07006BE731 /* ParentViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +239,9 @@
 			files = (
 				35563B161B26DAF5008AE6F1 /* ViewController.m in Sources */,
 				35563B131B26DAF5008AE6F1 /* AppDelegate.m in Sources */,
-				35E1066D1B293310006BE731 /* ChildViewController.m in Sources */,
-				35E1066A1B2932FE006BE731 /* ParentViewController.m in Sources */,
+				35E106741B293A07006BE731 /* ParentViewController.m in Sources */,
 				35563B101B26DAF5008AE6F1 /* main.m in Sources */,
+				35E106731B293A07006BE731 /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

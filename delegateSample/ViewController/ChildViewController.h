@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+//1. buat protocol --ini bukan obat flu
+@protocol ChildViewControllerDelegate;
+
 @interface ChildViewController : UIViewController
+
+@property (nonatomic,weak) id<ChildViewControllerDelegate> delegate;
 
 @end
