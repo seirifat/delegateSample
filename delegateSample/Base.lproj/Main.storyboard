@@ -22,11 +22,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoB-h4-JlZ">
+                                <rect key="frame" x="216" y="356" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.75395443197679191" green="0.89936985417101201" blue="0.99984416555851063" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="70Y-4O-PsX"/>
+                                    <constraint firstAttribute="height" constant="30" id="oOy-94-aBw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Set Nama">
+                                    <color key="titleColor" red="0.46699329540000001" green="0.66519612689999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="aaM-aq-R8x" secondAttribute="centerY" id="WlR-D3-X6R"/>
+                            <constraint firstItem="HoB-h4-JlZ" firstAttribute="top" secondItem="aaM-aq-R8x" secondAttribute="bottom" constant="46" id="b54-HU-48k"/>
                             <constraint firstAttribute="centerX" secondItem="aaM-aq-R8x" secondAttribute="centerX" id="gHG-8Q-eEA"/>
+                            <constraint firstAttribute="centerX" secondItem="HoB-h4-JlZ" secondAttribute="centerX" id="sid-nh-pQa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F8w-eM-Up0">
@@ -58,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vol-qk-kns">
-                                <rect key="frame" x="192" y="167" width="216" height="30"/>
+                                <rect key="frame" x="192" y="123" width="216" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="6CU-JC-eQ9"/>
                                     <constraint firstAttribute="height" constant="30" id="O72-R4-QEI"/>
@@ -67,7 +82,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kny-Yi-ge0">
-                                <rect key="frame" x="192" y="237" width="216" height="40"/>
+                                <rect key="frame" x="192" y="193" width="216" height="40"/>
                                 <color key="backgroundColor" red="0.49367234166311103" green="0.77601396276595747" blue="0.18213944833407059" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Z1u-bl-6cf"/>
@@ -82,12 +97,20 @@
                                     <action selector="btnSubmitClk:" destination="hNE-5L-7uy" eventType="touchUpInside" id="zcK-fV-Om5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgo-4N-b1i">
+                                <rect key="frame" x="277" y="64" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.81124985521383841" green="0.91634382732177999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Wgo-4N-b1i" secondAttribute="centerX" id="6d2-R5-x24"/>
                             <constraint firstAttribute="centerX" secondItem="vol-qk-kns" secondAttribute="centerX" id="CY3-JH-ZD7"/>
                             <constraint firstItem="Kny-Yi-ge0" firstAttribute="top" secondItem="vol-qk-kns" secondAttribute="bottom" constant="40" id="HV5-qh-AWn"/>
                             <constraint firstItem="vol-qk-kns" firstAttribute="top" secondItem="Be4-5i-MLX" secondAttribute="bottom" constant="103" id="V29-XJ-iIS"/>
+                            <constraint firstItem="vol-qk-kns" firstAttribute="top" secondItem="Wgo-4N-b1i" secondAttribute="bottom" constant="38" id="YiE-Id-hLW"/>
                             <constraint firstAttribute="centerX" secondItem="Kny-Yi-ge0" secondAttribute="centerX" id="mLg-aJ-EjH"/>
                         </constraints>
                     </view>
